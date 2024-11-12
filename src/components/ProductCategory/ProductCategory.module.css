@@ -1,0 +1,40 @@
+/* src/components/ProductCategory/ProductCategory.module.css */
+.categorySearch {
+    padding: 1rem;
+}
+
+.input {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.searchButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.searchButton:hover {
+    background-color: #0056b3;
+}
+
+.productItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+
+.addButton {
+    background-color: #28a745;
+    color: white;
+    padding: 0 2rem;
+    cursor: pointer;
+    margin: 0;
+}
+
+.addButton:hover {
+    background-color: #218838;
+}
+
