@@ -16,6 +16,7 @@ test('renders search input and products', () => {
             products={mockProducts}
             onSearch={() => {}}
             onAddToCart={() => {}}
+            successMessage={""}
         />
     );
 
@@ -32,6 +33,7 @@ test('calls onSearch when search button is clicked', () => {
             products={[]}
             onSearch={handleSearch}
             onAddToCart={() => {}}
+            successMessage={""}
         />
     );
 

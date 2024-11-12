@@ -9,6 +9,7 @@ interface ProductCategoryViewProps {
     products: Product[];
     onSearch: () => void;
     onAddToCart: (product: Product) => void;
+    successMessage: string | null;
 }
 
 const ProductCategoryView: React.FC<ProductCategoryViewProps> = ({
@@ -17,6 +18,7 @@ const ProductCategoryView: React.FC<ProductCategoryViewProps> = ({
                                                                      products,
                                                                      onSearch,
                                                                      onAddToCart,
+                                                                     successMessage
                                                           }) => (
     <div className="main">
         <h1>Buscar Productos por Categoría</h1>
@@ -31,6 +33,7 @@ const ProductCategoryView: React.FC<ProductCategoryViewProps> = ({
                 />
                 <button onClick={onSearch} className={styles.searchButton}>Buscar</button>
             </div>
+            {successMessage && <div className="successMessage">{successMessage}</div>}
             {Boolean(products.length)  && (<ul className="categoryList">
                 {products.map(product => (
                     <li key={product._id} className={styles.productItem}>

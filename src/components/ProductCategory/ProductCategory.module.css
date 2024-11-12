@@ -8,6 +8,10 @@
     margin-right: 0.5rem;
 }
 
+form{
+    margin-bottom: 1rem;
+}
+
 .searchButton {
     background-color: #007bff;
     color: white;
